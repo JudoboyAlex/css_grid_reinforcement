@@ -146,6 +146,8 @@ a {
   /* Restrict the maximum width of the .main-block to 1200px,
   then ensure that block is centered within the layout */
   /* Hint: how do you center a block element? */
+  max-width: 1200px;
+  text-align: center;
 }
 
 .main-section {
@@ -212,6 +214,8 @@ a {
 
   .lessons-grid {
     display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1em;
     /* TODO 1 */
     /* 2 column template! (1 fraction each) */
     /* Use this as a reminder of the syntax:
@@ -241,12 +245,27 @@ a {
   }
 
   .main-block {
-    width: 880px;
+    width: 880px;   
+  }
+
+  .division{
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+  }
+
+  .grading{
+    grid-template-columns: 2fr;
+  }
+
+  .topics{
+    grid-template-columns: 2fr;
   }
 
   .lessons-grid {
     /* TODO 2 */
     /* 4 column template! (1 fraction each) */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 
   /* TODO 4 */
@@ -260,7 +279,5 @@ a {
   --------------------------- */
   /* Hint: Don't think about shrinking the last two elements into the single column,
   but instead think about stretching the first two across the template. */
-
-
 
 }
